@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>心形</title>
+    <style>
+        #div1{
+            position: relative;
+        }
+        #div1::before,#div1::after{
+            content: '';
+            width: 70px;
+            height: 115px;
+            position: absolute;
+            left: 70px;
+            top: 0;
+            background: #fa558f;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        #div1::after{
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
